@@ -21,6 +21,9 @@ import lombok.experimental.FieldDefaults;
 @Entity
 public class Piste implements Serializable {
 // hello
+
+//modif2
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	Long numPiste;
