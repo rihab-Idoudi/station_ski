@@ -35,7 +35,8 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>8.0.26</scope>
+			<scope>runtime</scope>
+			<version>8.0.26</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -55,31 +56,13 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-<<<<<<< HEAD
-			<version>3.11.2</version>
+			<version>3.10.0</version> <!-- Replace with the latest version -->
 			<scope>test</scope>
 		</dependency>
-		<!-- Remove JUnit 4 to avoid conflicts -->
-		<!-- <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency> -->
-		<!-- Add JUnit Jupiter for testing -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
 			<version>5.8.2</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- Add Spring Test for testing -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-=======
-			<version>3.10.0</version> <!-- Replace with the latest version -->
->>>>>>> 1b98638ac11949e8c5628869f6e0a4a46588f88c
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
