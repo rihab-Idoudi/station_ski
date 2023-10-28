@@ -25,7 +25,7 @@ class PisteServicesImplTest {
     IPisteRepository pisteRepository;
 
     @InjectMocks
-    PisteServicesImpl pisteServices;
+    IPisteServices pisteServices;
 
     @DisplayName("Retrieve all pistes - success scenario")
     @Test
