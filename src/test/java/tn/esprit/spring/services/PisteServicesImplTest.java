@@ -26,14 +26,14 @@ class PisteServicesImplTest {
 
     @InjectMocks
     PisteServicesImpl pisteServices;
-
+List<Piste> mockPistes = new ArrayList<>();
+        mockPistes.add(new Piste(1L, "Piste1", Color.RED, 100, 10, null));
+        mockPistes.add(new Piste(2L, "Piste2", Color.BLUE, 150, 15, null));
     @DisplayName("Retrieve all pistes - success scenario")
     @Test
     void testRetrieveAllPistes() {
         // Mocking
-        List<Piste> mockPistes = new ArrayList<>();
-        mockPistes.add(new Piste(1L, "Piste1", Color.RED, 100, 10, null));
-        mockPistes.add(new Piste(2L, "Piste2", Color.BLUE, 150, 15, null));
+        
         when(pisteRepository.findAll()).thenReturn(mockPistes);
 
         // Actual
