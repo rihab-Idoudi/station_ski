@@ -43,6 +43,8 @@ public class Piste implements Serializable {
 		this.slope = slope;
 	}
 
+
+
 	// Getters and setters
 
 	@Override
